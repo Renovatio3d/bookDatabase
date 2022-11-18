@@ -22,7 +22,8 @@ title__label.grid(row=0, column=0, sticky=W)
 # Book Title string des
 title__text = StringVar()
 # title__entry-store entry for storing
-title__entry = ttk.Entry(window, width=24, textvariable=title__text)
+title__entry = ttk.Entry(window, width=20, textvariable=title__text)
+
 title__entry.grid(row=0, column=1, sticky=W)
 
 window.mainloop()  # Runs the app
