@@ -40,4 +40,5 @@ isbn__text = StringVar()
 isbn__entry = ttk.Entry(window, width=20, textvariable=title__text)
 isbn__entry.grid(row=0, column=5, sticky=W)
 
+
 window.mainloop()  # Runs the app
