@@ -17,13 +17,27 @@ window.resizable(width=False, height=False)
 
 # variable title__label Stores label with parameters from ttk
 title__label = ttk.Label(window, text='Title', background='light blue', font=('TkDefaultFont', 12))
-# position first row to the left
+# position first row to the left for the above label
 title__label.grid(row=0, column=0, sticky=W)
-# Book Title string des
+# Book Title string des, string or char
 title__text = StringVar()
-# title__entry-store entry for storing
+# title__entry-store entry user input, text variable stores enter value
 title__entry = ttk.Entry(window, width=20, textvariable=title__text)
-
+# Same label different column
 title__entry.grid(row=0, column=1, sticky=W)
+
+# author
+author__label = ttk.Label(window, text='Author', background='light blue', font=('TkDefaultFont', 12))
+author__label.grid(row=0, column=2, sticky=W)
+author__text = StringVar()
+author__entry = ttk.Entry(window, width=20, textvariable=title__text)
+author__entry.grid(row=0, column=3, sticky=W)
+
+# ISBN
+isbn__label = ttk.Label(window, text='ISBN', background='light blue', font=('TkDefaultFont', 12))
+isbn__label.grid(row=0, column=4, sticky=W)
+isbn__text = StringVar()
+isbn__entry = ttk.Entry(window, width=20, textvariable=title__text)
+isbn__entry.grid(row=0, column=5, sticky=W)
 
 window.mainloop()  # Runs the app
